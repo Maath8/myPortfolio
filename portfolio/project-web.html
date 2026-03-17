@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full-Stack Web App — Muaz Nakkaş</title>
+  <meta name="description"
+    content="Full-Stack Web Application project details by Muaz Nakkaş. Built with HTML, CSS, JavaScript and SQL." />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="project-detail.css" />
+  <style>
+    /* Web projesi slaytlarındaki görsellerin tamamını kırpmadan göster */
+    .slideshow-wrap .slide img {
+      object-fit: contain;
+      background: #0a0b0f;
+    }
+
+    .thumb img {
+      object-fit: contain;
+      background: #0a0b0f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><img src="logo.png" alt="MN Logo" /></a>
+    </div>
+    <a href="index.html#projects" class="back-btn" id="back-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+      Back to Projects
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="detail-hero">
+    <span class="badge">🌐 Web Development</span>
+    <h1>Full-Stack <span class="gradient-text">Web App</span></h1>
+    <p>A complete web application with a responsive frontend, user authentication system, and an SQL-backed database —
+      built from scratch without any framework.</p>
+    <div class="tech-tags">
+      <span class="tech-tag">HTML / CSS</span>
+      <span class="tech-tag">JavaScript</span>
+      <span class="tech-tag">SQL</span>
+      <span class="tech-tag">PHP</span>
+      <span class="tech-tag">Responsive Design</span>
+    </div>
+  </div>
+
+  <!-- SLIDESHOW -->
+  <section class="slideshow-section">
+    <div class="slideshow-wrap" id="slideshow">
+      <div class="slide active" data-index="0">
+        <img src="project_web_custom4.png" alt="Web App Dashboard" />
+      </div>
+      <div class="slide" data-index="1">
+        <img src="web_ek_Screenshot_2026_01_10_225934.png" alt="Web Screenshot 1" />
+      </div>
+      <div class="slide" data-index="2">
+        <img src="web_ek_Screenshot_2026_01_10_230105.png" alt="Web Screenshot 2" />
+      </div>
+      <div class="slide" data-index="3">
+        <img src="web_ek_Screenshot_2026_01_10_230123.png" alt="Web Screenshot 3" />
+      </div>
+      <div class="slide" data-index="4">
+        <img src="web_ek_Screenshot_2026_01_10_231959.png" alt="Web Screenshot 4" />
+      </div>
+      <div class="slide" data-index="5">
+        <img src="web_ek_Screenshot_2026_01_10_232013.png" alt="Web Screenshot 5" />
+      </div>
+      <div class="slide" data-index="6">
+        <img src="web_ek_Screenshot_2026_01_10_232026.png" alt="Web Screenshot 6" />
+      </div>
+      <div class="slide" data-index="7">
+        <img src="web_ek_Screenshot_2026_01_10_234930.png" alt="Web Screenshot 7" />
+      </div>
+      <div class="slide" data-index="8">
+        <img src="web_ek_Screenshot_2026_01_11_001329.png" alt="Web Screenshot 8" />
+      </div>
+      <div class="slide" data-index="9">
+        <img src="web_ek_Screenshot_2026_01_11_001843.png" alt="Web Screenshot 9" />
+      </div>
+      <div class="slide" data-index="10">
+        <img src="web_ek_Screenshot_2026_01_11_003136.png" alt="Web Screenshot 10" />
+      </div>
+      <div class="slide" data-index="11">
+        <img src="web_ek_Screenshot_2026_01_11_124540.png" alt="Web Screenshot 11" />
+      </div>
+      <div class="slide" data-index="12">
+        <img src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_2026_01_10_23_14_40.png" alt="Web Screenshot 12" />
+      </div>
+      <div class="slide" data-index="13">
+        <img src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_2026_01_10_23_14_49.png" alt="Web Screenshot 13" />
+      </div>
+      <div class="slide" data-index="14">
+        <img src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_2026_01_10_23_15_00.png" alt="Web Screenshot 14" />
+      </div>
+      <div class="slide" data-index="15">
+        <img src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_2026_01_10_23_15_33.png" alt="Web Screenshot 15" />
+      </div>
+      <div class="slide" data-index="16">
+        <img src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_compare_html_2026_01_10_22_56_09.png"
+          alt="Web Screenshot 16" />
+      </div>
+      <div class="slide" data-index="17">
+        <img src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_recipe_html_2026_01_10_23_23_12.png"
+          alt="Web Screenshot 17" />
+      </div>
+
+      <div class="slide-counter"><span id="cur">1</span> / <span id="total">18</span></div>
+      <button class="slide-arrow prev" id="prev-btn" aria-label="Previous">&#8592;</button>
+      <button class="slide-arrow next" id="next-btn" aria-label="Next">&#8594;</button>
+    </div>
+
+    <div class="thumbnails">
+      <div class="thumb active" data-index="0"><img src="project_web_custom4.png" alt="Slide 1" /></div>
+      <div class="thumb" data-index="1"><img src="web_ek_Screenshot_2026_01_10_225934.png" alt="Slide 2" /></div>
+      <div class="thumb" data-index="2"><img src="web_ek_Screenshot_2026_01_10_230105.png" alt="Slide 3" /></div>
+      <div class="thumb" data-index="3"><img src="web_ek_Screenshot_2026_01_10_230123.png" alt="Slide 4" /></div>
+      <div class="thumb" data-index="4"><img src="web_ek_Screenshot_2026_01_10_231959.png" alt="Slide 5" /></div>
+      <div class="thumb" data-index="5"><img src="web_ek_Screenshot_2026_01_10_232013.png" alt="Slide 6" /></div>
+      <div class="thumb" data-index="6"><img src="web_ek_Screenshot_2026_01_10_232026.png" alt="Slide 7" /></div>
+      <div class="thumb" data-index="7"><img src="web_ek_Screenshot_2026_01_10_234930.png" alt="Slide 8" /></div>
+      <div class="thumb" data-index="8"><img src="web_ek_Screenshot_2026_01_11_001329.png" alt="Slide 9" /></div>
+      <div class="thumb" data-index="9"><img src="web_ek_Screenshot_2026_01_11_001843.png" alt="Slide 10" /></div>
+      <div class="thumb" data-index="10"><img src="web_ek_Screenshot_2026_01_11_003136.png" alt="Slide 11" /></div>
+      <div class="thumb" data-index="11"><img src="web_ek_Screenshot_2026_01_11_124540.png" alt="Slide 12" /></div>
+      <div class="thumb" data-index="12"><img
+          src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_2026_01_10_23_14_40.png" alt="Slide 13" /></div>
+      <div class="thumb" data-index="13"><img
+          src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_2026_01_10_23_14_49.png" alt="Slide 14" /></div>
+      <div class="thumb" data-index="14"><img
+          src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_2026_01_10_23_15_00.png" alt="Slide 15" /></div>
+      <div class="thumb" data-index="15"><img
+          src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_2026_01_10_23_15_33.png" alt="Slide 16" /></div>
+      <div class="thumb" data-index="16"><img
+          src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_compare_html_2026_01_10_22_56_09.png" alt="Slide 17" />
+      </div>
+      <div class="thumb" data-index="17"><img
+          src="web_ek_screencapture_127_0_0_1_5500_New_folder_2_recipe_html_2026_01_10_23_23_12.png" alt="Slide 18" />
+      </div>
+    </div>
+
+    <div class="slide-dots">
+      <div class="dot active" data-index="0"></div>
+      <div class="dot" data-index="1"></div>
+      <div class="dot" data-index="2"></div>
+      <div class="dot" data-index="3"></div>
+      <div class="dot" data-index="4"></div>
+      <div class="dot" data-index="5"></div>
+      <div class="dot" data-index="6"></div>
+      <div class="dot" data-index="7"></div>
+      <div class="dot" data-index="8"></div>
+      <div class="dot" data-index="9"></div>
+      <div class="dot" data-index="10"></div>
+      <div class="dot" data-index="11"></div>
+      <div class="dot" data-index="12"></div>
+      <div class="dot" data-index="13"></div>
+      <div class="dot" data-index="14"></div>
+      <div class="dot" data-index="15"></div>
+      <div class="dot" data-index="16"></div>
+      <div class="dot" data-index="17"></div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details-section">
+    <div class="detail-grid">
+
+      <div class="detail-card" id="card-0">
+        <div class="card-icon">📋</div>
+        <div class="card-title">About the Project</div>
+        <p class="card-text">
+          HızlıTarif is a modern and user-friendly recipe platform designed for busy lifestyles. It allows users to
+          quickly find recipes through advanced search and filters based on ingredients, cuisine, difficulty,
+          preparation time, and dietary preferences. Users can discover recipes tailored to the ingredients and kitchen
+          tools they already have, with clear step-by-step instructions, visuals, and tips. The platform also enables
+          interaction through ratings, comments, and favorites, creating an engaged cooking community. By combining
+          personalization, simplicity, and efficiency, HızlıTarif helps users save time, plan meals effectively, and
+          enjoy cooking with confidence.
+        </p>
+      </div>
+
+      <div class="detail-card" id="card-1">
+        <div class="card-icon">🛠️</div>
+        <div class="card-title">How It Was Built</div>
+        <p class="card-text">
+        <ul>
+          <li><strong>Frontend (HTML5, CSS3, JavaScript ES6+)</strong> – Clean, responsive UI with dynamic and
+            multilingual support.</li>
+          <li><strong>Backend (Node.js, Express.js)</strong> – High-performance, scalable server with RESTful API
+            management.</li>
+          <li><strong>Database (MySQL)</strong> – Secure storage for user data, comments, and favorite recipes.</li>
+          <li><strong>Security & Configuration (bcrypt, JWT, dotenv, CORS)</strong> – Password hashing, authentication,
+            and safe data
+            handling.</li>
+          <li><strong>Internationalization & Reliability (i18n, JSON, Fallback)</strong> – Multilingual support and
+            continuous system
+            operation.</li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="detail-card" id="card-2">
+        <div class="card-icon">⚡</div>
+        <div class="card-title">Challenges We Faced</div>
+        <p class="card-text">
+        <ul>
+          <li><strong>Ingredient Matching Logic:</strong> Users could enter any combination of ingredients, so designing
+            an algorithm to
+            accurately suggest recipes was tricky.</li>
+          <li><strong>Personalized Recommendations:</strong> Making sure the suggested recipes matched both available
+            ingredients and kitchen appliances required careful data filtering.</li>
+          <li><strong>Database Management:</strong> Handling recipe data, user accounts, likes, and saves efficiently in
+            SQL while keeping queries fast.</li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="detail-card" id="card-3">
+        <div class="card-icon">💡</div>
+        <div class="card-title">What I Learned</div>
+        <p class="card-text">
+          Working on HızlıTarif taught me key full-stack development principles, including clear API communication
+          between front-end and back-end. I gained experience in user-focused design with responsive layouts, intuitive
+          navigation, and helpful feedback. Security became a core focus, covering password hashing, authentication, and
+          input validation. I also learned the importance of modular, maintainable code, proper database design, and
+          asynchronous programming for performance and reliability.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 <strong>Muaz Nakkaş</strong> — All rights reserved.</p>
+  </footer>
+
+  <script src="project-detail.js"></script>
+</body>
+
+</html>

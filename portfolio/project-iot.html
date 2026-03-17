@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESP32 IoT System — Muaz Nakkaş</title>
+  <meta name="description"
+    content="ESP32 IoT project details by Muaz Nakkaş. Smart sensor monitoring with Arduino and ESP32." />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><img src="logo.png" alt="MN Logo" /></a>
+    </div>
+    <a href="index.html#projects" class="back-btn" id="back-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+      Back to Projects
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="detail-hero">
+    <span class="badge">🔌 IoT Development</span>
+    <h1>ESP32 <span class="gradient-text">IoT System</span></h1>
+    <p>A smart IoT monitoring system using ESP32 and various sensors. Real-time data is collected, processed, and
+      visualized through a custom web dashboard over Wi-Fi.</p>
+    <div class="tech-tags">
+      <span class="tech-tag">ESP32</span>
+      <span class="tech-tag">Arduino</span>
+      <span class="tech-tag">C++</span>
+      <span class="tech-tag">DHT22</span>
+      <span class="tech-tag">Wi-Fi</span>
+      <span class="tech-tag">OLED Display</span>
+    </div>
+  </div>
+
+  <!-- SLIDESHOW -->
+  <section class="slideshow-section">
+    <div class="slideshow-wrap" id="slideshow">
+      <div class="slide active" data-index="0">
+        <img src="iot_slide2.png" alt="IoT Project Overview" />
+      </div>
+      <div class="slide" data-index="1">
+        <img src="project_iot_custom3.jpeg" alt="IoT Hardware Components" style="object-fit: contain;" />
+      </div>
+
+      <div class="slide-counter"><span id="cur">1</span> / <span id="total">2</span></div>
+      <button class="slide-arrow prev" id="prev-btn" aria-label="Previous">&#8592;</button>
+      <button class="slide-arrow next" id="next-btn" aria-label="Next">&#8594;</button>
+    </div>
+
+    <div class="thumbnails">
+      <div class="thumb active" data-index="0"><img src="iot_slide2.png" alt="Slide 1" /></div>
+      <div class="thumb" data-index="1"><img src="project_iot_custom3.jpeg" alt="Slide 2"
+          style="object-fit: contain;" /></div>
+    </div>
+
+    <div class="slide-dots">
+      <div class="dot active" data-index="0"></div>
+      <div class="dot" data-index="1"></div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details-section">
+    <div class="detail-grid">
+
+      <div class="detail-card" id="card-0">
+        <div class="card-icon">📋</div>
+        <div class="card-title">About the Project</div>
+        <p class="card-text">
+          This IoT system uses an ESP32 board to retrieve real-time weather data from an online weather service. Based
+          on
+          the received data, the system executes predefined scenarios and automated responses. The ESP32 processes the
+          weather information and performs different actions depending on conditions such as temperature, humidity, or
+          weather status.
+        </p>
+      </div>
+
+      <div class="detail-card" id="card-1">
+        <div class="card-icon">🛠️</div>
+        <div class="card-title">How It Was Built</div>
+        <p class="card-text">
+        <ul>
+          <li>ESP32 microcontroller programmed via Arduino IDE (C++)</li>
+          <li>Wi-Fi connection to retrieve real-time weather data from an online API</li>
+          <li>Weather data processing on the ESP32 to determine environmental conditions</li>
+          <li>ESP32 WebServer library to host a live dashboard</li>
+          <li>Scenario-based automation where the ESP32 triggers different actions depending on the received weather
+            information</li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="detail-card" id="card-2">
+        <div class="card-icon">⚡</div>
+        <div class="card-title">Challenges We Faced</div>
+        <p class="card-text">
+        <ul>
+          <li><strong>Weather Data Filtering:</strong> Retrieving the correct weather information for a specific city
+            from the
+            weather website required parsing and filtering the received data. The solution involved identifying the
+            relevant fields in the response and extracting only the necessary data for the system logic.</li>
+          <li><strong>Wi-Fi Stability:</strong> The ESP32 occasionally lost connection to the Wi-Fi network. This
+            issue was addressed by implementing an automatic reconnection mechanism in the main loop to maintain
+            continuous data retrieval from the weather service.</li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="detail-card" id="card-3">
+        <div class="card-icon">💡</div>
+        <div class="card-title">What I Learned</div>
+        <p class="card-text">
+          Through this project, I gained experience with HTTP requests to retrieve real-time data from an online weather
+          service. I learned how to perform API integration using the ESP32 and process the received data for system
+          logic. I also implemented IoT automation logic, where the ESP32 executes different scenarios based on the
+          weather conditions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 <strong>Muaz Nakkaş</strong> — All rights reserved.</p>
+  </footer>
+
+  <script src="project-detail.js"></script>
+</body>
+
+</html>

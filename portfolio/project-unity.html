@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unity 3D Games — Muaz Nakkaş</title>
+  <meta name="description" content="Unity 3D Games by Muaz Nakkaş — PC and Mobile versions built with C# and Unity." />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="unity-hub.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><img src="logo.png" alt="MN Logo" /></a>
+    </div>
+    <a href="index.html#projects" class="back-btn" id="back-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Projects
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hub-hero">
+    <div class="hub-badge">🎮 Game Development</div>
+    <h1>Unity <span class="gradient-text">3D Games</span></h1>
+    <p>I built two separate games using Unity and C# — one for PC and one for Mobile. Choose a platform to explore the details.</p>
+  </div>
+
+  <!-- PLATFORM CARDS -->
+  <div class="hub-cards">
+
+    <!-- PC Card -->
+    <a href="project-unity-pc.html" class="hub-card" id="hub-card-pc">
+      <div class="hub-card-img-wrap">
+        <img src="unity_slide2.png" alt="Unity PC Game" class="hub-card-img" />
+        <div class="hub-card-glow pc-glow"></div>
+      </div>
+      <div class="hub-card-body">
+        <div class="hub-platform-badge pc-badge">
+          <span class="platform-icon">🖥️</span>
+          PC Game
+        </div>
+        <h2 class="hub-card-title">Unity PC Game</h2>
+        <p class="hub-card-desc">
+          A full 3D game built for desktop. Features AI-driven enemies, physics-based gameplay,
+          real-time lighting, and custom level design — all written in C#.
+        </p>
+        <div class="hub-tags">
+          <span class="hub-tag">C#</span>
+          <span class="hub-tag">3D</span>
+          <span class="hub-tag">AI Pathfinding</span>
+          <span class="hub-tag">Physics</span>
+        </div>
+        <div class="hub-cta">
+          View PC Game Details
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+      </div>
+    </a>
+
+    <!-- Divider / or -->
+    <div class="hub-or">
+      <div class="hub-or-line"></div>
+      <span>or</span>
+      <div class="hub-or-line"></div>
+    </div>
+
+    <!-- Mobile Card -->
+    <a href="project-unity-mobile.html" class="hub-card" id="hub-card-mobile">
+      <div class="hub-card-img-wrap">
+        <img src="unity_custom_mobile.png" alt="Unity Mobile Game" class="hub-card-img" />
+        <div class="hub-card-glow mobile-glow"></div>
+      </div>
+      <div class="hub-card-body">
+        <div class="hub-platform-badge mobile-badge">
+          <span class="platform-icon">📱</span>
+          Mobile Game
+        </div>
+        <h2 class="hub-card-title">Unity Mobile Game</h2>
+        <p class="hub-card-desc">
+          A casual game built and deployed on Android. Designed around touch input,
+          optimized for mobile hardware, and tested on real devices.
+        </p>
+        <div class="hub-tags">
+          <span class="hub-tag">C#</span>
+          <span class="hub-tag">Android</span>
+          <span class="hub-tag">Touch Input</span>
+          <span class="hub-tag">Mobile UX</span>
+        </div>
+        <div class="hub-cta">
+          View Mobile Game Details
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 <strong>Muaz Nakkaş</strong> — All rights reserved.</p>
+  </footer>
+
+  <script src="unity-hub.js"></script>
+</body>
+</html>
