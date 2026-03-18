@@ -173,8 +173,7 @@ body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
-  padding-top: 0.85rem;
-  padding-bottom: 0.85rem;
+  padding: 0.85rem 3rem;
 }
 
 .nav-logo {
@@ -988,8 +987,7 @@ body {
   }
 
   .navbar.scrolled {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding: 0.75rem 1.5rem;
   }
 
   .nav-links {
@@ -1033,10 +1031,10 @@ body {
   }
 
   .nav-links {
-    gap: 0.7rem;
+    gap: 1rem;
   }
 
   .nav-links a {
-    font-size: 0.78rem;
+    font-size: 0.82rem;
   }
 }
