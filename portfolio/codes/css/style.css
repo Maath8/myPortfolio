@@ -1,5 +1,5 @@
-/* =====================================================
-   MUAZ NAKKAŞ — PORTFOLIO STYLESHEET
+﻿/* =====================================================
+   MUAZ NAKKAÅž â€” PORTFOLIO STYLESHEET
    ===================================================== */
 
 /* === RESET & ROOT === */
@@ -169,7 +169,7 @@ body {
 }
 
 .navbar.scrolled {
-  background: rgba(10, 11, 15, 0.85);
+  background: rgba(5, 16, 12, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
@@ -197,7 +197,7 @@ body {
   filter: drop-shadow(0 0 8px rgba(124, 58, 237, 0.5));
 }
 
-/* Logo hover efekti kaldırıldı */
+/* Logo hover efekti kaldÄ±rÄ±ldÄ± */
 
 .nav-links {
   list-style: none;
@@ -257,24 +257,24 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Görseli en-boy oranını koruyarak ekranın her pikseline doldurur */
+  /* GÃ¶rseli en-boy oranÄ±nÄ± koruyarak ekranÄ±n her pikseline doldurur */
   object-position: center;
   filter: blur(3.5px);
-  /* Belli belirsiz, fısıltı seviyesinde bir bulanıklık */
+  /* Belli belirsiz, fÄ±sÄ±ltÄ± seviyesinde bir bulanÄ±klÄ±k */
   transform: scale(1.002);
-  /* Blur sebebiyle kenar renk kaçmasını önlemek için minicik ölçek */
+  /* Blur sebebiyle kenar renk kaÃ§masÄ±nÄ± Ã¶nlemek iÃ§in minicik Ã¶lÃ§ek */
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  /* Sağ alt köşedeki istenmeyen yıldızı, arka planın siyah rengiyle ustaca maskeleyerek yok ediyoruz. */
+  /* SaÄŸ alt kÃ¶ÅŸedeki istenmeyen yÄ±ldÄ±zÄ±, arka planÄ±n siyah rengiyle ustaca maskeleyerek yok ediyoruz. */
   background:
     radial-gradient(circle at 92% 92%, #0a0b0f 0%, #0a0b0f 8%, transparent 22%),
     linear-gradient(135deg,
-      rgba(10, 11, 15, 0.6) 0%,
-      rgba(10, 11, 15, 0.3) 50%,
-      rgba(10, 11, 15, 0.6) 100%);
+      rgba(5, 16, 12, 0.6) 0%,
+      rgba(5, 16, 12, 0.3) 50%,
+      rgba(5, 16, 12, 0.6) 100%);
 }
 
 .hero-content {
@@ -325,7 +325,7 @@ body {
   color: var(--text-secondary);
   margin-bottom: 1rem;
   min-height: 1.6em;
-  /* Yazılar silinirken butonların yukarı zıplamasını engeller */
+  /* YazÄ±lar silinirken butonlarÄ±n yukarÄ± zÄ±plamasÄ±nÄ± engeller */
   display: block;
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.8s forwards;
@@ -611,10 +611,10 @@ body {
   top: 12px;
   left: 12px;
   z-index: 5;
-  background: rgba(10, 11, 15, 0.75);
+  background: rgba(5, 16, 12, 0.75);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(124, 58, 237, 0.35);
-  color: #c4b5fd;
+  color: #a7f3d0;
   font-size: 0.75rem;
   font-weight: 700;
   padding: 4px 12px;
@@ -625,7 +625,7 @@ body {
 
 .project-platform-badge.mobile {
   border-color: rgba(6, 182, 212, 0.4);
-  color: #67e8f9;
+  color: #6ee7b7;
 }
 
 .project-img-wrap {
@@ -648,7 +648,7 @@ body {
 .project-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10, 11, 15, 0.8);
+  background: rgba(5, 16, 12, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;

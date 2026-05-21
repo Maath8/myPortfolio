@@ -1,5 +1,5 @@
-/* =====================================================
-   UNITY HUB PAGE — STYLES
+﻿/* =====================================================
+   UNITY HUB PAGE â€” STYLES
    ===================================================== */
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -250,13 +250,13 @@ body {
 .pc-badge {
   background: rgba(124,58,237,0.15);
   border: 1px solid rgba(124,58,237,0.35);
-  color: #c4b5fd;
+  color: #a7f3d0;
 }
 
 .mobile-badge {
   background: rgba(6,182,212,0.12);
   border: 1px solid rgba(6,182,212,0.35);
-  color: #67e8f9;
+  color: #6ee7b7;
 }
 
 .platform-icon { font-size: 1rem; }
@@ -304,8 +304,8 @@ body {
 
 .hub-cta svg { width: 16px; height: 16px; transition: transform var(--transition); }
 
-#hub-card-pc .hub-cta     { color: #c4b5fd; }
-#hub-card-mobile .hub-cta { color: #67e8f9; }
+#hub-card-pc .hub-cta     { color: #a7f3d0; }
+#hub-card-mobile .hub-cta { color: #6ee7b7; }
 
 .hub-card:hover .hub-cta svg { transform: translateX(5px); }
 
@@ -345,3 +345,4 @@ body {
   }
   .navbar { padding: 0.9rem 1.2rem; }
 }
+

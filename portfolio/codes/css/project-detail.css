@@ -1,5 +1,5 @@
-/* =====================================================
-   PROJECT DETAIL PAGE — SHARED STYLES
+﻿/* =====================================================
+   PROJECT DETAIL PAGE â€” SHARED STYLES
    ===================================================== */
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -68,7 +68,7 @@ body {
   filter: drop-shadow(0 0 8px rgba(124,58,237,0.5));
   transition: var(--transition);
 }
-/* Logo hover efekti kaldırıldı */
+/* Logo hover efekti kaldÄ±rÄ±ldÄ± */
 
 .back-btn {
   display: inline-flex;
@@ -400,3 +400,4 @@ body {
   .detail-grid { grid-template-columns: 1fr; }
   .thumb { width: 60px; height: 40px; }
 }
+
