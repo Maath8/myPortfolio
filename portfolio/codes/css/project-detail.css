@@ -62,14 +62,42 @@ body {
 
 .nav-logo { display: flex; align-items: center; }
 .nav-logo a { display: flex; align-items: center; text-decoration: none; line-height: 0; }
-.nav-logo img {
-  height: 40px; width: 40px;
-  object-fit: contain;
-  border-radius: 50%;
-  filter: drop-shadow(0 0 8px rgba(124,58,237,0.5));
-  transition: var(--transition);
+.nav-logo-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+  display: inline-flex;
+  align-items: center;
+  transition: transform var(--transition);
+  text-decoration: none;
 }
-/* Logo hover efekti kaldÄ±rÄ±ldÄ± */
+
+.nav-logo-text:hover {
+  transform: scale(1.05);
+}
+
+.logo-ma {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.logo-code {
+  font-weight: 400;
+  color: var(--accent-3);
+  margin-left: 2px;
+}
+
+.cursor {
+  font-weight: 800;
+  color: var(--accent-3);
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
 .back-btn {
   display: inline-flex;
