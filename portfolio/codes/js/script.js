@@ -12,6 +12,26 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// === HAMBURGER MENU ===
+const navToggle = document.getElementById('nav-toggle');
+const navLinksContainer = document.querySelector('.nav-links');
+
+if (navToggle && navLinksContainer) {
+  navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('active');
+    navLinksContainer.classList.toggle('active');
+  });
+
+  // Close menu when clicking a link
+  const navLinkItems = document.querySelectorAll('.nav-links a');
+  navLinkItems.forEach(link => {
+    link.addEventListener('click', () => {
+      navToggle.classList.remove('active');
+      navLinksContainer.classList.remove('active');
+    });
+  });
+}
+
 // === HERO PARTICLES ===
 function createParticles() {
   const container = document.getElementById('hero-particles');
